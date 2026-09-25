@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentals Catalog | RAMSHI Rentals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand">RAMSHI <span>RENTALS</span></a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html"><i class="bi bi-house"></i>Home</a>
+          <a href="rentals.html" class="active"><i class="bi bi-grid"></i>Rentals</a>
+          <a href="bikes.html"><i class="bi bi-bicycle"></i>Bikes</a>
+          <a href="cars.html"><i class="bi bi-car-front"></i>Cars</a>
+          <a href="cameras.html"><i class="bi bi-camera"></i>Cameras</a>
+          <a href="equipment.html"><i class="bi bi-tools"></i>Equipment</a>
+          <a href="about.html"><i class="bi bi-info-circle"></i>About</a>
+          <a href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="account.html"><i class="bi bi-person"></i>Account</a>
+          <a href="account.html"><i class="bi bi-calendar-check"></i>My Rentals</a>
+          <a href="booking.html" class="primary-btn"><i class="bi bi-calendar2-check"></i>Rent Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <h1>Rental Catalog</h1>
+          <p>Explore all available bike, car, camera and equipment rentals with flexible prices and easy booking.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="catalog-controls">
+            <div class="search-box">
+              <i class="bi bi-search"></i>
+              <input id="rental-search" type="search" placeholder="Search rentals" />
+            </div>
+
+            <div class="filter-box">
+              <select id="category-filter">
+                <option value="all">All</option>
+                <option value="bikes">Bikes</option>
+                <option value="cars">Cars</option>
+                <option value="cameras">Cameras</option>
+                <option value="equipment">Equipment</option>
+              </select>
+
+              <select id="sort-select">
+                <option value="">Sort by</option>
+                <option value="price-low">Price Low to High</option>
+                <option value="price-high">Price High to Low</option>
+                <option value="name-a-z">Name A-Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="rental-grid">
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Royal Enfield Classic 350" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Royal Enfield Classic 350</h3>
+                <p class="rental-description">Classic motorcycle built for long rides and relaxed city travel.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>350cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Royal Enfield Hunter 350" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Royal Enfield Hunter 350</h3>
+                <p class="rental-description">Urban-focused motorcycle with a sporty stance and lively handling.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>349cc</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,250/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Royal Enfield Meteor 350" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Royal Enfield Meteor 350</h3>
+                <p class="rental-description">Touring-ready cruiser designed for comfort on longer routes.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>349cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,350/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Yamaha MT-15" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Yamaha MT-15</h3>
+                <p class="rental-description">Streetfighter style bike delivering sharp handling and power.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>155cc</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,450/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Yamaha R15 V4" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Yamaha R15 V4</h3>
+                <p class="rental-description">Sport bike made for aggressive rides and smooth acceleration.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>155cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,500/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="KTM Duke 200" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">KTM Duke 200</h3>
+                <p class="rental-description">Street performance bike with sharp looks and strong power delivery.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>200cc</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,600/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="KTM Duke 390" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">KTM Duke 390</h3>
+                <p class="rental-description">Track-inspired bike ideal for long highway cruising and fun rides.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>399cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Honda Activa 6G" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Honda Activa 6G</h3>
+                <p class="rental-description">Reliable scooter for everyday commutes and quick local rides.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>109cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹850/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Honda Dio" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Honda Dio</h3>
+                <p class="rental-description">Fun and easy scooter featuring a stylish look and smooth ride.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>110cc</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹900/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="TVS Apache RTR 200" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">TVS Apache RTR 200</h3>
+                <p class="rental-description">Performance bike with excellent road grip and sporty styling.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>200cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,400/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="TVS Ronin" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">TVS Ronin</h3>
+                <p class="rental-description">Modern roadster with a premium feel and versatile performance.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>225cc</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,420/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Bajaj Pulsar 150" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Bajaj Pulsar 150</h3>
+                <p class="rental-description">Reliable street bike known for everyday usability and comfort.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>150cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,050/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Bajaj Pulsar NS200" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Bajaj Pulsar NS200</h3>
+                <p class="rental-description">Aggressive commuter with strong torque and sporty design.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>200cc</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,350/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Suzuki Gixxer" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Suzuki Gixxer</h3>
+                <p class="rental-description">All-rounder bike with comfortable ergonomics and a reliable engine.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>155cc</span><span><i class="bi bi-people"></i>2 Seats</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Bikes">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Hero Xpulse 200" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Bikes</span>
+                <h3 class="rental-name">Hero Xpulse 200</h3>
+                <p class="rental-description">Adventure bike for roads less traveled and mixed terrain rides.</p>
+                <div class="rental-specs"><span><i class="bi bi-speedometer2"></i>200cc</span><span><i class="bi bi-geo-alt"></i>Adventure</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,480/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Maruti Swift" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Maruti Swift</h3>
+                <p class="rental-description">Popular compact hatchback ideal for city comfort and daily travel.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-gear"></i>Manual</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,400/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Maruti Baleno" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Maruti Baleno</h3>
+                <p class="rental-description">Refined sedan with good cabin space and smooth performance.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,500/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Hyundai i20" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Hyundai i20</h3>
+                <p class="rental-description">Stylish hatchback with comfortable seating and strong city appeal.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-gear"></i>Automatic</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,700/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Hyundai Venue" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Hyundai Venue</h3>
+                <p class="rental-description">SUV built for comfort, road presence and family road trips.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-fuel-pump"></i>Petrol</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹3,000/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Hyundai Creta" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Hyundai Creta</h3>
+                <p class="rental-description">Premium compact SUV for comfortable and stylish travel.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-gear"></i>Automatic</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹3,400/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Kia Seltos" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Kia Seltos</h3>
+                <p class="rental-description">Bold SUV with premium features and excellent cabin comfort.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-gear"></i>Manual</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹3,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Tata Nexon" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Tata Nexon</h3>
+                <p class="rental-description">Compact SUV featuring practical space and urban durability.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-fuel-pump"></i>Diesel</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹3,100/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Tata Punch" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Tata Punch</h3>
+                <p class="rental-description">Compact, practical and dependable for quick city trips.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-gear"></i>Manual</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Toyota Innova Crysta" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Toyota Innova Crysta</h3>
+                <p class="rental-description">Comfortable multi-seater vehicle ideal for family and group travel.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>7 Seats</span><span><i class="bi bi-fuel-pump"></i>Diesel</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹4,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Mahindra XUV700" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Mahindra XUV700</h3>
+                <p class="rental-description">Luxury SUV with roomy seating and excellent long-distance comfort.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>7 Seats</span><span><i class="bi bi-gear"></i>Automatic</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹5,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Toyota Fortuner" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Toyota Fortuner</h3>
+                <p class="rental-description">Premium off-road capable SUV for road trips and weekend adventures.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>7 Seats</span><span><i class="bi bi-fuel-pump"></i>Diesel</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹5,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cars">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Honda City" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cars</span>
+                <h3 class="rental-name">Honda City</h3>
+                <p class="rental-description">Elegant sedan for comfortable city drives and business travel.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>5 Seats</span><span><i class="bi bi-gear"></i>Automatic</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹3,000/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS 1500D" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Canon EOS 1500D</h3>
+                <p class="rental-description">Easy DSLR for photography work and family events.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>24.1MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,500/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS 200D II" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Canon EOS 200D II</h3>
+                <p class="rental-description">Compact mirrorless camera with excellent image quality.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>24.1MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS R10" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Canon EOS R10</h3>
+                <p class="rental-description">High-speed mirrorless choice for travel and action shots.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-150mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,400/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS R50" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Canon EOS R50</h3>
+                <p class="rental-description">Compact creator camera for vlogging and content creation.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-45mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,300/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Sony Alpha A6400" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Sony Alpha A6400</h3>
+                <p class="rental-description">Mirrorless camera built for motion, travel and product photography.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-135mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,600/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Sony Alpha A7 III" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Sony Alpha A7 III</h3>
+                <p class="rental-description">Full-frame performer for cinematic capture and portrait sessions.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>28-70mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹3,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Sony Alpha A7 IV" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Sony Alpha A7 IV</h3>
+                <p class="rental-description">Professional hybrid camera for photo, video and event coverage.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>33MP</span><span><i class="bi bi-bounding-box-circles"></i>24-70mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹3,600/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Nikon D5600" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Nikon D5600</h3>
+                <p class="rental-description">Budget-friendly DSLR for photography learning and travel shoots.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,700/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Nikon Z50" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Nikon Z50</h3>
+                <p class="rental-description">Mirrorless camera focused on crisp image quality and travel usability.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>20.9MP</span><span><i class="bi bi-bounding-box-circles"></i>16-50mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,100/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Cameras">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Fujifilm X-S10" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Cameras</span>
+                <h3 class="rental-name">Fujifilm X-S10</h3>
+                <p class="rental-description">Creative camera with strong image colors and versatile shooting modes.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera"></i>26.1MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,500/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="DJI Mini Drone" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">DJI Mini Drone</h3>
+                <p class="rental-description">Portable drone for cinematic aerial footage and travel content.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera-video"></i>4K</span><span><i class="bi bi-battery-charging"></i>30min</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="GoPro Action Camera" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">GoPro Action Camera</h3>
+                <p class="rental-description">Durable action camera for adventures, sports and travel vlogs.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera-video"></i>4K</span><span><i class="bi bi-water"></i>Waterproof</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,600/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="DJI Osmo Action" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">DJI Osmo Action</h3>
+                <p class="rental-description">High-quality action footage with stabilization and wide angle support.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera-video"></i>4K</span><span><i class="bi bi-arrows-fullscreen"></i>Wide Angle</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Projector" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Projector</h3>
+                <p class="rental-description">Portable projection system for presentations, events and movie nights.</p>
+                <div class="rental-specs"><span><i class="bi bi-projector"></i>HD</span><span><i class="bi bi-battery-charging"></i>Battery</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹2,600/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Portable Bluetooth Speaker" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Portable Bluetooth Speaker</h3>
+                <p class="rental-description">Compact sound system for parties, events and travel soundtracks.</p>
+                <div class="rental-specs"><span><i class="bi bi-speaker"></i>20W</span><span><i class="bi bi-battery-charging"></i>12hr</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹700/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Professional Tripod" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Professional Tripod</h3>
+                <p class="rental-description">Stable support for sharp shots and smooth long exposures.</p>
+                <div class="rental-specs"><span><i class="bi bi-arrows-fullscreen"></i>Adjustable</span><span><i class="bi bi-camera"></i>Lightweight</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹650/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Camera Gimbal" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Camera Gimbal</h3>
+                <p class="rental-description">Smooth stabilization tool for crisp video while moving.</p>
+                <div class="rental-specs"><span><i class="bi bi-camera-video"></i>3-Axis</span><span><i class="bi bi-battery-charging"></i>Long Life</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="LED Video Light Kit" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">LED Video Light Kit</h3>
+                <p class="rental-description">Bright lighting set for interior scenes, interviews and products.</p>
+                <div class="rental-specs"><span><i class="bi bi-lightbulb"></i>Powerful</span><span><i class="bi bi-sliders"></i>Adjustable</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,400/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Wireless Microphone" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Wireless Microphone</h3>
+                <p class="rental-description">Compact audio kit that helps capture clean sound on the move.</p>
+                <div class="rental-specs"><span><i class="bi bi-mic"></i>Dual</span><span><i class="bi bi-broadcast"></i>Wireless</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹850/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Green Screen Kit" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Green Screen Kit</h3>
+                <p class="rental-description">Easy backdrop setup for studio scenes and digital content creation.</p>
+                <div class="rental-specs"><span><i class="bi bi-film"></i>Backdrop</span><span><i class="bi bi-tools"></i>Portable</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,100/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Portable Power Station" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Portable Power Station</h3>
+                <p class="rental-description">Reliable power source for camps, shoots and outdoor setups.</p>
+                <div class="rental-specs"><span><i class="bi bi-battery-full"></i>1000W</span><span><i class="bi bi-lightning-charge"></i>Charging</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,500/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+
+            <article class="rental-card" data-category="Equipment">
+              <div class="rental-image"><img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Camping Tent" /></div>
+              <div class="rental-info">
+                <span class="rental-category">Equipment</span>
+                <h3 class="rental-name">Camping Tent</h3>
+                <p class="rental-description">Weather-ready tent for group camps, road trips and outdoor stays.</p>
+                <div class="rental-specs"><span><i class="bi bi-people"></i>4 Persons</span><span><i class="bi bi-cloud-rain"></i>Waterproof</span></div>
+                <span class="availability available">Available</span>
+                <div class="rental-bottom"><strong class="rental-price">₹1,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">RAMSHI <span>RENTALS</span></div>
+            <p>Reliable rentals for rides, trips, events and creative projects.</p>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rentals.html">Rentals</a></li>
+              <li><a href="bikes.html">Bikes</a></li>
+              <li><a href="cars.html">Cars</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Browse</h4>
+            <ul>
+              <li><a href="cameras.html">Cameras</a></li>
+              <li><a href="equipment.html">Equipment</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>Mangalore, Karnataka, India</li>
+              <li>+91 98765 43210</li>
+              <li>hello@ramshirentals.com</li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 RAMSHI Rentals. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>

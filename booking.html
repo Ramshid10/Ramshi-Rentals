@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Rental | RAMSHI Rentals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body data-page="booking">
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand">RAMSHI <span>RENTALS</span></a>
+        <button class="nav-toggle" type="button" aria-label="Open menu"><i class="bi bi-list"></i></button>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html"><i class="bi bi-house"></i>Home</a>
+          <a href="rentals.html"><i class="bi bi-grid"></i>Rentals</a>
+          <a href="bikes.html"><i class="bi bi-bicycle"></i>Bikes</a>
+          <a href="cars.html"><i class="bi bi-car-front"></i>Cars</a>
+          <a href="cameras.html"><i class="bi bi-camera"></i>Cameras</a>
+          <a href="equipment.html"><i class="bi bi-tools"></i>Equipment</a>
+          <a href="about.html"><i class="bi bi-info-circle"></i>About</a>
+          <a href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="account.html"><i class="bi bi-person"></i>Account</a>
+          <a href="account.html"><i class="bi bi-calendar-check"></i>My Rentals</a>
+          <a href="booking.html" class="primary-btn"><i class="bi bi-calendar2-check"></i>Rent Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <h1>Booking</h1>
+          <p>Reserve your rental item with clear details and a fast confirmation process.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <form id="booking-form" class="booking-form">
+            <div class="booking-grid">
+              <div class="booking-card">
+                <h3>Rental Details</h3>
+                <div class="booking-form-grid">
+                  <div class="booking-form-group">
+                    <label for="full-name">Full Name *</label>
+                    <input id="full-name" type="text" placeholder="Your full name" />
+                    <span id="full-name-error" class="validation-message"></span>
+                  </div>
+                  <div class="booking-form-group">
+                    <label for="phone">Phone *</label>
+                    <input id="phone" type="tel" placeholder="+91 98765 43210" />
+                    <span id="phone-error" class="validation-message"></span>
+                  </div>
+                  <div class="booking-form-group">
+                    <label for="email">Email *</label>
+                    <input id="email" type="email" placeholder="name@example.com" />
+                    <span id="email-error" class="validation-message"></span>
+                  </div>
+                  <div class="booking-form-group">
+                    <label for="rental-item">Rental Item *</label>
+                    <select id="rental-item">
+                      <option value="">Select rental</option>
+                      <option value="Royal Enfield Classic 350">Royal Enfield Classic 350</option>
+                      <option value="Maruti Swift">Maruti Swift</option>
+                      <option value="Canon EOS 1500D">Canon EOS 1500D</option>
+                      <option value="DJI Mini Drone">DJI Mini Drone</option>
+                      <option value="Honda Activa 6G">Honda Activa 6G</option>
+                      <option value="Hyundai Creta">Hyundai Creta</option>
+                      <option value="Sony Alpha A6400">Sony Alpha A6400</option>
+                      <option value="Projector">Projector</option>
+                    </select>
+                    <span id="rental-item-error" class="validation-message"></span>
+                  </div>
+                  <div class="booking-form-group">
+                    <label for="start-date">Start Date *</label>
+                    <input id="start-date" type="date" />
+                    <span id="start-date-error" class="validation-message"></span>
+                  </div>
+                  <div class="booking-form-group">
+                    <label for="end-date">End Date *</label>
+                    <input id="end-date" type="date" />
+                    <span id="end-date-error" class="validation-message"></span>
+                  </div>
+                  <div class="booking-form-group" style="grid-column: 1 / -1;">
+                    <label for="pickup-location">Pickup Location *</label>
+                    <input id="pickup-location" type="text" placeholder="Mangalore, Karnataka" />
+                    <span id="pickup-location-error" class="validation-message"></span>
+                  </div>
+                  <div class="booking-form-group" style="grid-column: 1 / -1;">
+                    <label for="special-request">Special Request</label>
+                    <textarea id="special-request" rows="4" placeholder="Any message for the rental team"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-card">
+                <h3>Payment & Summary</h3>
+                <div class="booking-form-group">
+                  <label for="payment-method">Payment Method</label>
+                  <select id="payment-method">
+                    <option value="Cash on Pickup">Cash on Pickup</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Card">Card</option>
+                  </select>
+                </div>
+
+                <div class="success-row">
+                  <span>Selected Rental</span>
+                  <strong id="booking-rental-name">--</strong>
+                </div>
+                <div class="success-row">
+                  <span>Daily Price</span>
+                  <strong>₹1,200/day</strong>
+                </div>
+                <div class="success-row">
+                  <span>Total</span>
+                  <strong id="booking-total">₹0</strong>
+                </div>
+
+                <button type="submit" class="submit-btn" style="margin-top: 1.5rem; width: 100%;"><i class="bi bi-check-circle"></i>Confirm Booking</button>
+              </div>
+            </div>
+          </form>
+
+          <div id="booking-success" class="success-card">
+            <h3>BOOKING CONFIRMED</h3>
+            <div class="success-row"><span>Booking ID:</span><strong id="success-booking-id">--</strong></div>
+            <div class="success-row"><span>Rental:</span><strong id="success-rental-name">--</strong></div>
+            <div class="success-row"><span>Customer:</span><strong id="success-customer-name">--</strong></div>
+            <div class="success-row"><span>Rental Period:</span><strong id="success-date-range">--</strong></div>
+            <div class="success-row"><span>Total:</span><strong id="success-total">₹0</strong></div>
+            <div class="success-row"><span>Status:</span><strong>Confirmed</strong></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">RAMSHI <span>RENTALS</span></div><p>Reliable rentals for rides, trips, events and creative projects.</p><div class="social-links"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div></div><div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="bikes.html">Bikes</a></li><li><a href="cars.html">Cars</a></li></ul></div><div><h4>Browse</h4><ul><li><a href="cameras.html">Cameras</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h4>Contact</h4><ul><li>Mangalore, Karnataka, India</li><li>+91 98765 43210</li><li>hello@ramshirentals.com</li><li><a href="account.html">Account</a></li></ul></div></div><div class="footer-bottom">© 2026 RAMSHI Rentals. All rights reserved.</div></div></footer>
+  </body>
+</html>

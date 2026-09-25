@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera Rentals | RAMSHI Rentals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand">RAMSHI <span>RENTALS</span></a>
+        <button class="nav-toggle" type="button" aria-label="Open menu"><i class="bi bi-list"></i></button>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html"><i class="bi bi-house"></i>Home</a>
+          <a href="rentals.html"><i class="bi bi-grid"></i>Rentals</a>
+          <a href="bikes.html"><i class="bi bi-bicycle"></i>Bikes</a>
+          <a href="cars.html"><i class="bi bi-car-front"></i>Cars</a>
+          <a href="cameras.html" class="active"><i class="bi bi-camera"></i>Cameras</a>
+          <a href="equipment.html"><i class="bi bi-tools"></i>Equipment</a>
+          <a href="about.html"><i class="bi bi-info-circle"></i>About</a>
+          <a href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="account.html"><i class="bi bi-person"></i>Account</a>
+          <a href="account.html"><i class="bi bi-calendar-check"></i>My Rentals</a>
+          <a href="booking.html" class="primary-btn"><i class="bi bi-calendar2-check"></i>Rent Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <h1>Camera Rentals</h1>
+          <p>Professional cameras and creator gear for photography shoots, travel content and event production.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="catalog-controls">
+            <div class="search-box"><i class="bi bi-search"></i><input type="search" id="rental-search" placeholder="Search camera rentals" /></div>
+            <div class="filter-box"><select id="category-filter"><option value="all">All</option><option value="cameras">Cameras</option></select><select id="sort-select"><option value="">Sort by</option><option value="price-low">Price Low to High</option><option value="price-high">Price High to Low</option><option value="name-a-z">Name A-Z</option></select></div>
+          </div>
+
+          <div class="rental-grid">
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS 1500D" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Canon EOS 1500D</h3><p class="rental-description">Beginner-friendly DSLR for travel and event photography.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>24.1MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹1,500/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS 200D II" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Canon EOS 200D II</h3><p class="rental-description">Compact DSLR with excellent image quality and portability.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>24.1MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹1,800/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS R10" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Canon EOS R10</h3><p class="rental-description">Mirrorless camera ideal for fast action and travel work.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-150mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹2,400/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS R50" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Canon EOS R50</h3><p class="rental-description">Compact creator camera for vlogging and digital storytelling.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-45mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹2,300/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Sony Alpha A6400" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Sony Alpha A6400</h3><p class="rental-description">Powerful hybrid camera for travel, motion and portraits.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-135mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹2,600/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Sony Alpha A7 III" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Sony Alpha A7 III</h3><p class="rental-description">Full-frame imaging for cinematic detail and clarity.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>28-70mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹3,200/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Sony Alpha A7 IV" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Sony Alpha A7 IV</h3><p class="rental-description">Professional hybrid camera for stills and video work.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>33MP</span><span><i class="bi bi-bounding-box-circles"></i>24-70mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹3,600/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Nikon D5600" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Nikon D5600</h3><p class="rental-description">Camera for creative learning and everyday shooting.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>24.2MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹1,700/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Nikon Z50" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Nikon Z50</h3><p class="rental-description">Mirrorless model with crisp results and flexible shooting modes.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>20.9MP</span><span><i class="bi bi-bounding-box-circles"></i>16-50mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹2,100/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+            <article class="rental-card"><div class="rental-image"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Fujifilm X-S10" /></div><div class="rental-info"><span class="rental-category">Cameras</span><h3 class="rental-name">Fujifilm X-S10</h3><p class="rental-description">Creative camera combining color quality with smooth handling.</p><div class="rental-specs"><span><i class="bi bi-camera"></i>26.1MP</span><span><i class="bi bi-bounding-box-circles"></i>18-55mm</span></div><span class="availability available">Available</span><div class="rental-bottom"><strong class="rental-price">₹2,500/day</strong><button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button></div></div></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">RAMSHI <span>RENTALS</span></div><p>Reliable rentals for rides, trips, events and creative projects.</p><div class="social-links"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div></div><div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="bikes.html">Bikes</a></li><li><a href="cars.html">Cars</a></li></ul></div><div><h4>Browse</h4><ul><li><a href="cameras.html">Cameras</a></li><li><a href="equipment.html">Equipment</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h4>Contact</h4><ul><li>Mangalore, Karnataka, India</li><li>+91 98765 43210</li><li>hello@ramshirentals.com</li><li><a href="account.html">Account</a></li></ul></div></div><div class="footer-bottom">© 2026 RAMSHI Rentals. All rights reserved.</div></div></footer>
+  </body>
+</html>
