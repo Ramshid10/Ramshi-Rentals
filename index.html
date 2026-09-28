@@ -1,418 +1,1087 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rentora Rentals | Premium Bike, Car, Camera & Equipment Rental</title>
+
     <meta
-      name="description"
-      content="Rentora Rentals offers bikes, cars, cameras and equipment for trips, events, projects and everyday needs."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        name="description"
+        content="Rentora Rentals offers bikes, cars, cameras and equipment for trips, events, projects and everyday needs."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
+
+    <link href="css/style.css" rel="stylesheet">
+
     <script src="js/script.js" defer></script>
-  </head>
-  <body data-page="home">
-    <header class="site-header">
-      <div class="container navbar">
-        <a href="index.html" class="brand">Rentora <span>RENTALS</span></a>
+</head>
+
+<body data-page="home">
+
+<header class="site-header">
+    <div class="container navbar">
+
+        <a class="brand" href="index.html">
+            Rentora
+            <span>RENTALS</span>
+        </a>
 
         <button class="nav-toggle" type="button" aria-label="Open menu">
-          <i class="bi bi-list"></i>
+            <i class="bi bi-list"></i>
         </button>
 
         <nav class="nav-links open" aria-label="Main navigation">
-          <a href="index.html" class="active"><i class="bi bi-house"></i>Home</a>
-          <a href="rentals.html"><i class="bi bi-grid"></i>Rentals</a>
-          <a href="bikes.html"><i class="bi bi-bicycle"></i>Bikes</a>
-          <a href="cars.html"><i class="bi bi-car-front"></i>Cars</a>
-          <a href="cameras.html"><i class="bi bi-camera"></i>Cameras</a>
-          <a href="equipment.html"><i class="bi bi-tools"></i>Equipment</a>
-          <a href="about.html"><i class="bi bi-info-circle"></i>About</a>
-          <a href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+
+            <a class="active" href="index.html">
+                <i class="bi bi-house"></i>
+                Home
+            </a>
+
+            <a href="rentals.html">
+                <i class="bi bi-grid"></i>
+                Rentals
+            </a>
+
+            <a href="bikes.html">
+                <i class="bi bi-bicycle"></i>
+                Bikes
+            </a>
+
+            <a href="cars.html">
+                <i class="bi bi-car-front"></i>
+                Cars
+            </a>
+
+            <a href="cameras.html">
+                <i class="bi bi-camera"></i>
+                Cameras
+            </a>
+
+            <a href="equipment.html">
+                <i class="bi bi-tools"></i>
+                Equipment
+            </a>
+
+            <a href="about.html">
+                <i class="bi bi-info-circle"></i>
+                About
+            </a>
+
+            <a href="contact.html">
+                <i class="bi bi-telephone"></i>
+                Contact
+            </a>
+
         </nav>
 
         <div class="header-actions">
-          <a href="account.html"><i class="bi bi-person"></i>Account</a>
-          <a href="account.html"><i class="bi bi-calendar-check"></i>My Rentals</a>
-          <a href="booking.html" class="primary-btn"><i class="bi bi-calendar2-check"></i>Rent Now</a>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <section class="hero">
+            <a href="account.html">
+                <i class="bi bi-person"></i>
+                Account
+            </a>
+
+            <a href="account.html">
+                <i class="bi bi-calendar-check"></i>
+                My Rentals
+            </a>
+
+            <a class="primary-btn" href="booking.html">
+                <i class="bi bi-calendar2-check"></i>
+                Rent Now
+            </a>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
         <div class="container hero-grid">
-          <div>
-            <span class="eyebrow">Fast booking · flexible plans</span>
-            <h1>Rent What You Need.<br />Go Where You Want.</h1>
-            <p>
-              Reliable bikes, cars, cameras and equipment for trips, events,
-              projects and everyday needs.
-            </p>
-            <div class="hero-actions">
-              <a href="rentals.html" class="primary-btn"><i class="bi bi-search"></i>Browse Rentals</a>
-              <a href="booking.html" class="secondary-btn"><i class="bi bi-calendar-check"></i>Book Now</a>
-            </div>
 
-            <div class="quick-stats">
-              <div class="stat-box">
-                <strong>500+</strong>
-                <span>Rental items</span>
-              </div>
-              <div class="stat-box">
-                <strong>4</strong>
-                <span>Categories</span>
-              </div>
-              <div class="stat-box">
-                <strong>24/7</strong>
-                <span>Online booking</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
-              alt="Premium rental vehicles and equipment"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Popular Rentals</h2>
-            <p>Choose from trusted and well-maintained vehicles and gear for your next ride or project.</p>
-          </div>
-
-          <div class="rental-grid">
-            <article class="rental-card">
-              <div class="rental-image">
-                <img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Royal Enfield Classic 350" />
-              </div>
-              <div class="rental-info">
-                <span class="rental-category">Bikes</span>
-                <h3 class="rental-name">Royal Enfield Classic 350</h3>
-                <p class="rental-description">Classic road machine for city rides and long weekend escapes.</p>
-                <div class="rental-specs">
-                  <span><i class="bi bi-speedometer2"></i>350cc</span>
-                  <span><i class="bi bi-people"></i>2 Seats</span>
-                </div>
-                <span class="availability available">Available</span>
-                <div class="rental-bottom">
-                  <strong class="rental-price">₹1,200/day</strong>
-                  <button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="rental-card">
-              <div class="rental-image">
-                <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Maruti Swift" />
-              </div>
-              <div class="rental-info">
-                <span class="rental-category">Cars</span>
-                <h3 class="rental-name">Maruti Swift</h3>
-                <p class="rental-description">Compact city car with comfort, mileage and easy drivability.</p>
-                <div class="rental-specs">
-                  <span><i class="bi bi-people"></i>5 Seats</span>
-                  <span><i class="bi bi-gear"></i>Manual</span>
-                </div>
-                <span class="availability available">Available</span>
-                <div class="rental-bottom">
-                  <strong class="rental-price">₹2,400/day</strong>
-                  <button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="rental-card">
-              <div class="rental-image">
-                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Canon EOS 1500D" />
-              </div>
-              <div class="rental-info">
-                <span class="rental-category">Cameras</span>
-                <h3 class="rental-name">Canon EOS 1500D</h3>
-                <p class="rental-description">Beginner-friendly DSLR for travel, portraits and event coverage.</p>
-                <div class="rental-specs">
-                  <span><i class="bi bi-camera"></i>24.1MP</span>
-                  <span><i class="bi bi-bounding-box-circles"></i>18-55mm</span>
-                </div>
-                <span class="availability available">Available</span>
-                <div class="rental-bottom">
-                  <strong class="rental-price">₹1,500/day</strong>
-                  <button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button>
-                </div>
-              </div>
-            </article>
-
-            <article class="rental-card">
-              <div class="rental-image">
-                <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="DJI Mini Drone" />
-              </div>
-              <div class="rental-info">
-                <span class="rental-category">Equipment</span>
-                <h3 class="rental-name">DJI Mini Drone</h3>
-                <p class="rental-description">Compact aerial drone for scenic shots and quick cinematic content.</p>
-                <div class="rental-specs">
-                  <span><i class="bi bi-camera-video"></i>4K</span>
-                  <span><i class="bi bi-battery-charging"></i>30 Min</span>
-                </div>
-                <span class="availability available">Available</span>
-                <div class="rental-bottom">
-                  <strong class="rental-price">₹2,800/day</strong>
-                  <button type="button" class="rent-button"><i class="bi bi-calendar-check"></i>Rent Now</button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="background: #fff;">
-        <div class="container">
-          <div class="section-header">
-            <h2>Browse by Category</h2>
-            <p>Choose the right rental based on your trip, shoot or project requirement.</p>
-          </div>
-
-          <div class="category-grid">
-            <div class="category-item">
-              <img src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80" alt="Bikes" />
-              <div class="category-content">
-                <h3>Bikes</h3>
-                <p>Commuting and touring bikes for every kind of journey.</p>
-                <a href="bikes.html" class="primary-btn">Explore Bikes</a>
-              </div>
-            </div>
-
-            <div class="category-item">
-              <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80" alt="Cars" />
-              <div class="category-content">
-                <h3>Cars</h3>
-                <p>Comfortable options for family trips, city travel and road adventures.</p>
-                <a href="cars.html" class="primary-btn">Explore Cars</a>
-              </div>
-            </div>
-
-            <div class="category-item">
-              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80" alt="Cameras" />
-              <div class="category-content">
-                <h3>Cameras</h3>
-                <p>Creative tools for content creation, events and professional shoots.</p>
-                <a href="cameras.html" class="primary-btn">Explore Cameras</a>
-              </div>
-            </div>
-
-            <div class="category-item">
-              <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80" alt="Equipment" />
-              <div class="category-content">
-                <h3>Equipment</h3>
-                <p>Lighting, audio, drones and accessories for smooth production setup.</p>
-                <a href="equipment.html" class="primary-btn">Explore Equipment</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Why Choose Rentora</h2>
-            <p>Quality, convenience and transparent service built around your rental needs.</p>
-          </div>
-
-          <div class="feature-grid">
-            <div class="feature-card">
-              <i class="bi bi-check-circle"></i>
-              <h3>Easy Booking</h3>
-              <p>Quick, simple reservation flow with clear steps and fast confirmation.</p>
-            </div>
-            <div class="feature-card">
-              <i class="bi bi-tag"></i>
-              <h3>Affordable Prices</h3>
-              <p>Transparent pricing for daily and flexible rentals across every category.</p>
-            </div>
-            <div class="feature-card">
-              <i class="bi bi-tools"></i>
-              <h3>Well Maintained</h3>
-              <p>Every ride and equipment piece is checked for safety and quality.</p>
-            </div>
-            <div class="feature-card">
-              <i class="bi bi-calendar3"></i>
-              <h3>Flexible Rental Periods</h3>
-              <p>Short or extended rental windows designed to match your schedule.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="background: #fff;">
-        <div class="container">
-          <div class="section-header">
-            <h2>How It Works</h2>
-            <p>From selecting your rental to confirmation, every step is simple and fast.</p>
-          </div>
-
-          <div class="steps-grid">
-            <div class="step-card">
-              <span class="step-number">1</span>
-              <h3>Choose Rental</h3>
-              <p>Pick a bike, car, camera or equipment from our catalog.</p>
-            </div>
-            <div class="step-card">
-              <span class="step-number">2</span>
-              <h3>Select Dates</h3>
-              <p>Choose your rental period and pickup preferences.</p>
-            </div>
-            <div class="step-card">
-              <span class="step-number">3</span>
-              <h3>Enter Details</h3>
-              <p>Share your information and booking details clearly.</p>
-            </div>
-            <div class="step-card">
-              <span class="step-number">4</span>
-              <h3>Confirm Booking</h3>
-              <p>Complete the request and receive booking confirmation.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-header">
-            <h2>Special Offers</h2>
-            <p>Limited-time deals for longer bookings and multi-item rentals.</p>
-          </div>
-
-          <div class="offer-grid">
-            <div class="offer-card">
-              <span class="offer-tag">Weekend Special</span>
-              <h3>Save 15% on Bikes</h3>
-              <p>Book a bike for 3+ days and get extra savings on your trip.</p>
-            </div>
-            <div class="offer-card">
-              <span class="offer-tag">Family Trip</span>
-              <h3>Car Packages</h3>
-              <p>Enjoy lower pricing on multi-day city and highway rental packages.</p>
-            </div>
-            <div class="offer-card">
-              <span class="offer-tag">Creator Deal</span>
-              <h3>Camera & Audio Combo</h3>
-              <p>Bundle camera gear and accessories for professional content creation.</p>
-            </div>
-            <div class="offer-card">
-              <span class="offer-tag">Event Ready</span>
-              <h3>Equipment Packs</h3>
-              <p>Get better value on lighting, audio and projectors for your event setup.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="background: #fff;">
-        <div class="container">
-          <div class="section-header">
-            <h2>Customer Reviews</h2>
-            <p>Real feedback from people who booked with Rentora Rentals.</p>
-          </div>
-
-          <div class="review-grid">
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>"The bike was in excellent condition and the pickup process was very smooth. Highly recommended."</p>
-              <h3>Arjun</h3>
-            </div>
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>"I booked a camera kit for a travel shoot and the equipment quality was outstanding."</p>
-              <h3>Priya</h3>
-            </div>
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>"Booking a car for a family trip was easy, fast and budget friendly."</p>
-              <h3>Rahul</h3>
-            </div>
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>"The team helped me choose the right projector and lighting gear for our event setup."</p>
-              <h3>Neha</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="cta">
             <div>
-              <h2>Ready for your next ride or shoot?</h2>
-              <p>Choose the right rental item and book in just a few steps.</p>
-            </div>
-            <a href="rentals.html" class="primary-btn"><i class="bi bi-arrow-right-circle"></i>Get Started</a>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <div class="container">
+                <span class="eyebrow">
+                    Fast booking · flexible plans
+                </span>
+
+                <h1>
+                    Rent What You Need.
+                    <br>
+                    Go Where You Want.
+                </h1>
+
+                <p>
+                    Reliable bikes, cars, cameras and equipment for trips,
+                    events, projects and everyday needs.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="primary-btn" href="rentals.html">
+                        <i class="bi bi-search"></i>
+                        Browse Rentals
+                    </a>
+
+                    <a class="secondary-btn" href="booking.html">
+                        <i class="bi bi-calendar-check"></i>
+                        Book Now
+                    </a>
+
+                </div>
+
+                <div class="quick-stats">
+
+                    <div class="stat-box">
+                        <strong>500+</strong>
+                        <span>Rental items</span>
+                    </div>
+
+                    <div class="stat-box">
+                        <strong>4</strong>
+                        <span>Categories</span>
+                    </div>
+
+                    <div class="stat-box">
+                        <strong>24/7</strong>
+                        <span>Online booking</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+                    alt="Premium rental vehicles and equipment"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR RENTALS -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Popular Rentals</h2>
+
+                <p>
+                    Choose from trusted and well-maintained vehicles and gear
+                    for your next ride or project.
+                </p>
+
+            </div>
+
+
+            <div class="rental-grid">
+
+
+                <!-- BIKE -->
+                <article class="rental-card">
+
+                    <div class="rental-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80"
+                            alt="Royal Enfield Classic 350"
+                        >
+
+                    </div>
+
+                    <div class="rental-info">
+
+                        <span class="rental-category">
+                            Bikes
+                        </span>
+
+                        <h3 class="rental-name">
+                            Royal Enfield Classic 350
+                        </h3>
+
+                        <p class="rental-description">
+                            Classic road machine for city rides and long weekend escapes.
+                        </p>
+
+                        <div class="rental-specs">
+
+                            <span>
+                                <i class="bi bi-speedometer2"></i>
+                                350cc
+                            </span>
+
+                            <span>
+                                <i class="bi bi-people"></i>
+                                2 Seats
+                            </span>
+
+                        </div>
+
+                        <span class="availability available">
+                            Available
+                        </span>
+
+                        <div class="rental-bottom">
+
+                            <strong class="rental-price">
+                                ₹1,200/day
+                            </strong>
+
+                            <button class="rent-button" type="button">
+                                <i class="bi bi-calendar-check"></i>
+                                Rent Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAR -->
+                <article class="rental-card">
+
+                    <div class="rental-image">
+
+                        <!-- Corrected Maruti Swift image -->
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Maruti_Suzuki_Swift_2098.JPG"
+                            alt="Maruti Swift"
+                        >
+
+                    </div>
+
+                    <div class="rental-info">
+
+                        <span class="rental-category">
+                            Cars
+                        </span>
+
+                        <h3 class="rental-name">
+                            Maruti Swift
+                        </h3>
+
+                        <p class="rental-description">
+                            Compact city car with comfort, mileage and easy drivability.
+                        </p>
+
+                        <div class="rental-specs">
+
+                            <span>
+                                <i class="bi bi-people"></i>
+                                5 Seats
+                            </span>
+
+                            <span>
+                                <i class="bi bi-gear"></i>
+                                Manual
+                            </span>
+
+                        </div>
+
+                        <span class="availability available">
+                            Available
+                        </span>
+
+                        <div class="rental-bottom">
+
+                            <strong class="rental-price">
+                                ₹2,400/day
+                            </strong>
+
+                            <button class="rent-button" type="button">
+                                <i class="bi bi-calendar-check"></i>
+                                Rent Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAMERA -->
+                <article class="rental-card">
+
+                    <div class="rental-image">
+
+                        <!-- Corrected Canon camera image -->
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:FilePath/Canon_EOS_1500D.jpg"
+                            alt="Canon EOS 1500D"
+                        >
+
+                    </div>
+
+                    <div class="rental-info">
+
+                        <span class="rental-category">
+                            Cameras
+                        </span>
+
+                        <h3 class="rental-name">
+                            Canon EOS 1500D
+                        </h3>
+
+                        <p class="rental-description">
+                            Beginner-friendly DSLR for travel, portraits and event coverage.
+                        </p>
+
+                        <div class="rental-specs">
+
+                            <span>
+                                <i class="bi bi-camera"></i>
+                                24.1MP
+                            </span>
+
+                            <span>
+                                <i class="bi bi-bounding-box-circles"></i>
+                                18-55mm
+                            </span>
+
+                        </div>
+
+                        <span class="availability available">
+                            Available
+                        </span>
+
+                        <div class="rental-bottom">
+
+                            <strong class="rental-price">
+                                ₹1,500/day
+                            </strong>
+
+                            <button class="rent-button" type="button">
+                                <i class="bi bi-calendar-check"></i>
+                                Rent Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DRONE -->
+                <article class="rental-card">
+
+                    <div class="rental-image">
+
+                        <!-- Corrected DJI Mini Drone image -->
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:FilePath/2024_Dron_DJI_Mini_4_Pro_(18).jpg"
+                            alt="DJI Mini Drone"
+                        >
+
+                    </div>
+
+                    <div class="rental-info">
+
+                        <span class="rental-category">
+                            Equipment
+                        </span>
+
+                        <h3 class="rental-name">
+                            DJI Mini Drone
+                        </h3>
+
+                        <p class="rental-description">
+                            Compact aerial drone for scenic shots and quick cinematic content.
+                        </p>
+
+                        <div class="rental-specs">
+
+                            <span>
+                                <i class="bi bi-camera-video"></i>
+                                4K
+                            </span>
+
+                            <span>
+                                <i class="bi bi-battery-charging"></i>
+                                30 Min
+                            </span>
+
+                        </div>
+
+                        <span class="availability available">
+                            Available
+                        </span>
+
+                        <div class="rental-bottom">
+
+                            <strong class="rental-price">
+                                ₹2,800/day
+                            </strong>
+
+                            <button class="rent-button" type="button">
+                                <i class="bi bi-calendar-check"></i>
+                                Rent Now
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="section" style="background: #fff;">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Browse by Category</h2>
+
+                <p>
+                    Choose the right rental based on your trip,
+                    shoot or project requirement.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <div class="category-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558980664-10e7170b5df9?auto=format&fit=crop&w=900&q=80"
+                        alt="Bikes"
+                    >
+
+                    <div class="category-content">
+
+                        <h3>Bikes</h3>
+
+                        <p>
+                            Commuting and touring bikes for every kind of journey.
+                        </p>
+
+                        <a class="primary-btn" href="bikes.html">
+                            Explore Bikes
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=900&q=80"
+                        alt="Cars"
+                    >
+
+                    <div class="category-content">
+
+                        <h3>Cars</h3>
+
+                        <p>
+                            Comfortable options for family trips,
+                            city travel and road adventures.
+                        </p>
+
+                        <a class="primary-btn" href="cars.html">
+                            Explore Cars
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80"
+                        alt="Cameras"
+                    >
+
+                    <div class="category-content">
+
+                        <h3>Cameras</h3>
+
+                        <p>
+                            Creative tools for content creation,
+                            events and professional shoots.
+                        </p>
+
+                        <a class="primary-btn" href="cameras.html">
+                            Explore Cameras
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="category-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?auto=format&fit=crop&w=900&q=80"
+                        alt="Equipment"
+                    >
+
+                    <div class="category-content">
+
+                        <h3>Equipment</h3>
+
+                        <p>
+                            Lighting, audio, drones and accessories
+                            for smooth production setup.
+                        </p>
+
+                        <a class="primary-btn" href="equipment.html">
+                            Explore Equipment
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY CHOOSE RENTORA -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Why Choose Rentora</h2>
+
+                <p>
+                    Quality, convenience and transparent service
+                    built around your rental needs.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <i class="bi bi-check-circle"></i>
+
+                    <h3>Easy Booking</h3>
+
+                    <p>
+                        Quick, simple reservation flow with clear
+                        steps and fast confirmation.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <i class="bi bi-tag"></i>
+
+                    <h3>Affordable Prices</h3>
+
+                    <p>
+                        Transparent pricing for daily and flexible
+                        rentals across every category.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <i class="bi bi-tools"></i>
+
+                    <h3>Well Maintained</h3>
+
+                    <p>
+                        Every ride and equipment piece is checked
+                        for safety and quality.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <i class="bi bi-calendar3"></i>
+
+                    <h3>Flexible Rental Periods</h3>
+
+                    <p>
+                        Short or extended rental windows designed
+                        to match your schedule.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="section" style="background: #fff;">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>How It Works</h2>
+
+                <p>
+                    From selecting your rental to confirmation,
+                    every step is simple and fast.
+                </p>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <div class="step-card">
+
+                    <span class="step-number">1</span>
+
+                    <h3>Choose Rental</h3>
+
+                    <p>
+                        Pick a bike, car, camera or equipment
+                        from our catalog.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <span class="step-number">2</span>
+
+                    <h3>Select Dates</h3>
+
+                    <p>
+                        Choose your rental period and pickup preferences.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <span class="step-number">3</span>
+
+                    <h3>Enter Details</h3>
+
+                    <p>
+                        Share your information and booking details clearly.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <span class="step-number">4</span>
+
+                    <h3>Confirm Booking</h3>
+
+                    <p>
+                        Complete the request and receive booking confirmation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIAL OFFERS -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Special Offers</h2>
+
+                <p>
+                    Limited-time deals for longer bookings and multi-item rentals.
+                </p>
+
+            </div>
+
+
+            <div class="offer-grid">
+
+                <div class="offer-card">
+
+                    <span class="offer-tag">
+                        Weekend Special
+                    </span>
+
+                    <h3>Save 15% on Bikes</h3>
+
+                    <p>
+                        Book a bike for 3+ days and get extra savings on your trip.
+                    </p>
+
+                </div>
+
+
+                <div class="offer-card">
+
+                    <span class="offer-tag">
+                        Family Trip
+                    </span>
+
+                    <h3>Car Packages</h3>
+
+                    <p>
+                        Enjoy lower pricing on multi-day city
+                        and highway rental packages.
+                    </p>
+
+                </div>
+
+
+                <div class="offer-card">
+
+                    <span class="offer-tag">
+                        Creator Deal
+                    </span>
+
+                    <h3>Camera & Audio Combo</h3>
+
+                    <p>
+                        Bundle camera gear and accessories
+                        for professional content creation.
+                    </p>
+
+                </div>
+
+
+                <div class="offer-card">
+
+                    <span class="offer-tag">
+                        Event Ready
+                    </span>
+
+                    <h3>Equipment Packs</h3>
+
+                    <p>
+                        Get better value on lighting, audio
+                        and projectors for your event setup.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CUSTOMER REVIEWS -->
+    <section class="section" style="background: #fff;">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Customer Reviews</h2>
+
+                <p>
+                    Real feedback from people who booked with Rentora Rentals.
+                </p>
+
+            </div>
+
+
+            <div class="review-grid">
+
+                <div class="review-card">
+
+                    <div class="review-stars">
+                        &starf;&starf;&starf;&starf;&starf;
+                    </div>
+
+                    <p>
+                        "The bike was in excellent condition and the
+                        pickup process was very smooth. Highly recommended."
+                    </p>
+
+                    <h3>Arjun</h3>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="review-stars">
+                        &starf;&starf;&starf;&starf;&starf;
+                    </div>
+
+                    <p>
+                        "I booked a camera kit for a travel shoot and
+                        the equipment quality was outstanding."
+                    </p>
+
+                    <h3>Priya</h3>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="review-stars">
+                        &starf;&starf;&starf;&starf;&starf;
+                    </div>
+
+                    <p>
+                        "Booking a car for a family trip was easy,
+                        fast and budget friendly."
+                    </p>
+
+                    <h3>Rahul</h3>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="review-stars">
+                        &starf;&starf;&starf;&starf;&starf;
+                    </div>
+
+                    <p>
+                        "The team helped me choose the right projector
+                        and lighting gear for our event setup."
+                    </p>
+
+                    <h3>Neha</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="cta">
+
+                <div>
+
+                    <h2>
+                        Ready for your next ride or shoot?
+                    </h2>
+
+                    <p>
+                        Choose the right rental item and book in just a few steps.
+                    </p>
+
+                </div>
+
+                <a class="primary-btn" href="rentals.html">
+                    <i class="bi bi-arrow-right-circle"></i>
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
         <div class="footer-grid">
-          <div>
-            <div class="footer-brand">Rentora <span>RENTALS</span></div>
-            <p>Reliable rentals for rides, trips, events and creative projects.</p>
-            <div class="social-links">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+
+
+            <div>
+
+                <div class="footer-brand">
+                    Rentora
+                    <span>RENTALS</span>
+                </div>
+
+                <p>
+                    Reliable rentals for rides, trips,
+                    events and creative projects.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                </div>
+
             </div>
-          </div>
 
-          <div>
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="rentals.html">Rentals</a></li>
-              <li><a href="bikes.html">Bikes</a></li>
-              <li><a href="cars.html">Cars</a></li>
-            </ul>
-          </div>
 
-          <div>
-            <h4>Browse</h4>
-            <ul>
-              <li><a href="cameras.html">Cameras</a></li>
-              <li><a href="equipment.html">Equipment</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+            <div>
 
-          <div>
-            <h4>Contact</h4>
-            <ul>
-              <li>Mangalore, Karnataka, India</li>
-              <li>+91 98765 43210</li>
-              <li>hello@ramshirentals.com</li>
-              <li><a href="account.html">Account</a></li>
-            </ul>
-          </div>
+                <h4>Quick Links</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="rentals.html">Rentals</a>
+                    </li>
+
+                    <li>
+                        <a href="bikes.html">Bikes</a>
+                    </li>
+
+                    <li>
+                        <a href="cars.html">Cars</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>Browse</h4>
+
+                <ul>
+
+                    <li>
+                        <a href="cameras.html">Cameras</a>
+                    </li>
+
+                    <li>
+                        <a href="equipment.html">Equipment</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h4>Contact</h4>
+
+                <ul>
+
+                    <li>
+                        Mangalore, Karnataka, India
+                    </li>
+
+                    <li>
+                        +91 98765 43210
+                    </li>
+
+                    <li>
+                        hello@ramshirentals.com
+                    </li>
+
+                    <li>
+                        <a href="account.html">Account</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
+
 
         <div class="footer-bottom">
-          © 2026 Rentora Rentals. All rights reserved.
+
+            &copy; 2026 Rentora Rentals. All rights reserved.
+
         </div>
-      </div>
-    </footer>
-  </body>
+
+    </div>
+
+</footer>
+
+</body>
 </html>
