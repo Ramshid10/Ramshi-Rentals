@@ -1,4 +1,4 @@
-RAMSHI RENTALS
+Rentora RENTALS
 
 This is a beginner-friendly frontend project built with HTML, CSS and JavaScript.
 
